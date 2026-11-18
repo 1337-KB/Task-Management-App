@@ -1,0 +1,20 @@
+<p>Form Page</p>
+<form [formGroup]="taskForm">
+    <label for="title">Title</label>
+    <input id="title" name="title" type="text" formControlName="title"><br>
+    @if (taskForm.get('title')?.invalid && taskForm.get('title')?.touched) {
+        <div>Title is required.</div>
+    }
+
+    <label for="description">Description</label>
+    <textarea id="description" name="description" formControlName="description"></textarea><br>
+    @if (taskForm.get('description')?.invalid && taskForm.get('description')?.touched) {
+        <div>Description is required.</div>
+    }
+    @if (taskForm.get('completed')?.invalid && taskForm.get('completed')?.touched) {
+        <div>Completed status is required.</div>
+    }
+    <label for="completed">Completed</label>
+    <input id="completed" name="completed" type="checkbox" formControlName="completed"><br>
+    <button type="submit" (click)="onSubmit()">Add Task</button>
+</form>

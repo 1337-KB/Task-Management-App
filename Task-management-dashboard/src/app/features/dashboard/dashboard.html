@@ -1,0 +1,6 @@
+<h1>Dashboard</h1>
+<p routerLink="/tasks"> Total Tasks: {{ totalTasks() }}</p>
+<p> Completed Tasks: {{ completedTasks() }}</p>
+<p> Pending Tasks: {{ pendingTasks() }}</p>
+<p> Completed Percentage: {{ completedPercentage() }}%</p>
+<button routerLink="/task-form">Add Task</button>

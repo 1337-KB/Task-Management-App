@@ -1,0 +1,14 @@
+@if (loading()) {
+    <p>Loading...</p>
+} @else {
+    <ul>
+        @for (task of tasks(); track task.id) {
+            <li [ngClass]="{'completed': task.completed}" style="border: 1px solid black; margin-bottom: 5px; padding: 5px; border-radius: 5px;">
+                <p>{{ task.title }} - {{ task.completed ? 'Completed' : 'Pending' }}</p>
+                <button (click)="deleteTask(task.id)">Delete</button>
+                <button (click)="toggleTaskCompletion(task.id)" style="margin-left: 5px;">{{ task.completed ? 'Mark as Pending' : 'Mark as Completed' }}</button>
+                <a style="margin-left: 5px;" [routerLink]="['/task-form', task.id]">Edit</a>
+            </li>
+        }
+    </ul>
+}

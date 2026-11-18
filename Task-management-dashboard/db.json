@@ -1,0 +1,17 @@
+{
+  "tasks": [
+    {
+      "id": "eAh_d0AKyXw",
+      "title": "Task #1",
+      "description": "This is the first task",
+      "completed": false
+    },
+    {
+      "id": "dsewhUWE3Xg",
+      "title": "Task #2",
+      "description": "This is the second task",
+      "completed": false
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
