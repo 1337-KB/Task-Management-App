@@ -1,0 +1,141 @@
+{
+  "planHash": "1f104c970bffbcffd7c882c671349a997519afc61e5cc80aae10d0b29e014430",
+  "phase": "standalone",
+  "recordedAtUtc": "2026-11-10T16:32:46.6623525Z",
+  "retryCount": 0,
+  "resetBaseline": false,
+  "complete": true,
+  "result": {
+    "setupSucceeded": true,
+    "setupDurationMs": 0,
+    "setupFailureOutput": null,
+    "assertions": [
+      {
+        "name": "angular-build",
+        "kind": "process",
+        "verificationMethod": "exit-code",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "npm warn Unknown env config \u0022scripts-prepend-node-path\u0022. This will error in a future major version of npm. See \u0060npm help npmrc\u0060 for supported config options.\r\nnpm notice run task-management-dashboard@0.0.0 build\r\nnpm notice run ng build --configuration development\r\n\u003E Building...\r\n\u221A Building...\r\nInitial chunk files | Names         |  Raw size\r\nchunk-QBDCDZIN.js   | -             | 936.07 kB | \r\nchunk-I4RCOIQI.js   | -             | 517.87 kB | \r\nmain.js             | main          |   2.65 kB | \r\nstyles.css          | styles        |  96 bytes | \r\n\r\n                    | Initial total |   1.46 MB\r\n\r\nLazy chunk files    | Names         |  Raw size\r\nchunk-3QZSGD6T.js   | task-form     | 172.25 kB | \r\nchunk-FPT5ES56.js   | task-list     |   5.92 kB | \r\nchunk-I5GJ65HQ.js   | dashboard     |   4.32 kB | \r\nchunk-RQWZDZIX.js   | -             |   2.23 kB | \r\nchunk-XTYTUYYL.js   | login         |   1.35 kB | \r\n\r\nApplication bundle generation complete. [2.766 seconds] - 2026-11-10T16:32:30.481Z\r\n\r\nOutput location: C:\\Users\\FrimpoEv\\Workspace\\Employee Directory App\\Task-Management-app\\Task-management-dashboard\\dist\\Task-management-dashboard\r\n\r\n",
+        "durationMs": 6897
+      },
+      {
+        "name": "tests-pass",
+        "kind": "process",
+        "verificationMethod": "test-results",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 0,
+        "outputSample": "npm warn Unknown env config \u0022scripts-prepend-node-path\u0022. This will error in a future major version of npm. See \u0060npm help npmrc\u0060 for supported config options.\r\nnpm notice run task-management-dashboard@0.0.0 test\r\nnpm notice run ng test --watch=false --include=src/app/services/auth.spec.ts\r\n\u003E Building...\r\n\u221A Building...\r\nApplication bundle generation complete. [1.452 seconds] - 2026-11-10T16:32:35.356Z\r\n\r\n\r\n\u001B[1m\u001B[30m\u001B[46m RUN \u001B[49m\u001B[39m\u001B[22m \u001B[36mv4.1.12 \u001B[39m\u001B[90mC:/Users/FrimpoEv/Workspace/Employee Directory App/Task-Management-app/Task-management-dashboard\u001B[39m\r\n\r\n\r\n\u001B[2m Test Files \u001B[22m \u001B[1m\u001B[32m1 passed\u001B[39m\u001B[22m\u001B[90m (1)\u001B[39m\r\n\u001B[2m      Tests \u001B[22m \u001B[1m\u001B[32m3 passed\u001B[39m\u001B[22m\u001B[90m (3)\u001B[39m\r\n\u001B[2m   Start at \u001B[22m 11:32:36\r\n\u001B[2m   Duration \u001B[22m 4.72s\u001B[2m (transform 78ms, setup 532ms, import 47ms, tests 21ms, environment 3.58s)\u001B[22m\r\n\r\n",
+        "durationMs": 10421,
+        "testResults": {
+          "testFramework": "vitest",
+          "runnerDetectedFrom": "package_json",
+          "testsTotal": 3,
+          "testsPassed": 3,
+          "testsFailed": 0,
+          "testsSkipped": 0,
+          "parseFailed": false
+        }
+      },
+      {
+        "name": "angular-serves-home",
+        "kind": "http-probe",
+        "verificationMethod": "http-status",
+        "passed": true,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": null,
+        "outputSample": "HTTP 200\n\u003C!doctype html\u003E\r\n\u003Chtml lang=\u0022en\u0022\u003E\r\n\u003Chead\u003E\n  \u003Cscript type=\u0022module\u0022 src=\u0022/@vite/client\u0022\u003E\u003C/script\u003E\n\r\n  \u003Cmeta charset=\u0022utf-8\u0022\u003E\r\n  \u003Ctitle\u003ETaskManagementDashboard\u003C/title\u003E\r\n  \u003Cbase href=\u0022/\u0022\u003E\r\n  \u003Cmeta name=\u0022viewport\u0022 content=\u0022width=device-width, initial-scale=1\u0022\u003E\r\n  \u003Clink rel=\u0022icon\u0022 type=\u0022image/x-icon\u0022 href=\u0022favicon.ico\u0022\u003E\r\n\u003Clink rel=\u0022stylesheet\u0022 href=\u0022styles.css\u0022\u003E\u003C/head\u003E\r\n\u003Cbody\u003E\r\n  \u003Capp-root\u003E\u003C/app-root\u003E\r\n\u003Cscript src=\u0022main.js\u0022 type=\u0022module\u0022\u003E\u003C/script\u003E\u003C/body\u003E\r\n\u003C/html\u003E\r\n\n--- server output ---\nnpm warn Unknown env config \u0022scripts-prepend-node-path\u0022. This will error in a future major version of npm. See \u0060npm help npmrc\u0060 for supported config options.\r\nnpm notice run task-management-dashboard@0.0.0 start\r\nnpm notice run ng serve --port 4317\r\n\u003E Building...\r\n\u221A Building...\r\nInitial chunk files | Names         |  Raw size\r\nmain.js             | main          |   3.35 kB | \r\nchunk-PZ5AY32C.js   | -             | 283 bytes | \r\nstyles.css          | styles        |  96 bytes | \r\n\r\n                    | Initial total |   3.72 kB\r\n\r\nLazy chunk files    | Names         |  Raw size\r\nchunk-6ZE73ITL.js   | task-form     |   8.99 kB | \r\nchunk-M7B6F3BE.js   | task-list     |   6.42 kB | \r\nchunk-R5J3FQZ6.js   | dashboard     |   4.94 kB | \r\nchunk-4CVCUVP4.js   | -             |   2.37 kB | \r\nchunk-CLWL4MBH.js   | login         |   1.90 kB | \r\n\r\nApplication bundle generation complete. [1.655 seconds] - 2026-11-10T16:32:45.994Z\r\n\r\nWatch mode enabled. Watching for file changes...\r\nNOTE: Raw file sizes do not reflect development server per-request transformations.\r\n\u001B[2m11:32:46 a.m.\u001B[22m \u001B[36m\u001B[1m[vite]\u001B[22m\u001B[39m \u001B[90m\u001B[2m(client)\u001B[22m\u001B[39m Re-optimizing dependencies because vite config has changed\r\n  \u001B[32m\u279C\u001B[39m  \u001B[1mLocal\u001B[22m:   \u001B[36mhttp://localhost:\u001B[1m4317\u001B[22m/\u001B[39m\r\n",
+        "durationMs": 4896
+      }
+    ],
+    "executions": [
+      {
+        "source": "angular-build",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "args": [
+          "run",
+          "build",
+          "--",
+          "--configuration",
+          "development"
+        ],
+        "cwd": "C:\\Users\\FrimpoEv\\Workspace\\Employee Directory App\\Task-Management-app\\Task-management-dashboard",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32",
+        "nodeExecutable": "C:\\Program Files\\nodejs\\node.EXE",
+        "nodeVersion": "v24.21.0",
+        "packageManager": "npm",
+        "packageManagerExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "packageManagerVersion": "12.2.0",
+        "cleanup": {
+          "RootProcessId": 26588,
+          "Completed": true,
+          "ProcessesObserved": 10,
+          "ProcessesTerminated": 1,
+          "Failure": null
+        }
+      },
+      {
+        "source": "tests-pass",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "args": [
+          "test",
+          "--",
+          "--watch=false",
+          "--include=src/app/services/auth.spec.ts"
+        ],
+        "cwd": "C:\\Users\\FrimpoEv\\Workspace\\Employee Directory App\\Task-Management-app\\Task-management-dashboard",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32",
+        "nodeExecutable": "C:\\Program Files\\nodejs\\node.EXE",
+        "nodeVersion": "v24.21.0",
+        "packageManager": "npm",
+        "packageManagerExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "packageManagerVersion": "12.2.0",
+        "cleanup": {
+          "RootProcessId": 34236,
+          "Completed": true,
+          "ProcessesObserved": 14,
+          "ProcessesTerminated": 1,
+          "Failure": null
+        }
+      },
+      {
+        "source": "angular-serves-home",
+        "resolvedExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "args": [
+          "start",
+          "--",
+          "--port",
+          "4317"
+        ],
+        "cwd": "C:\\Users\\FrimpoEv\\Workspace\\Employee Directory App\\Task-Management-app\\Task-management-dashboard",
+        "env": {},
+        "prependPath": [],
+        "platform": "win32",
+        "nodeExecutable": "C:\\Program Files\\nodejs\\node.EXE",
+        "nodeVersion": "v24.21.0",
+        "packageManager": "npm",
+        "packageManagerExecutable": "C:\\Program Files\\nodejs\\npm.cmd",
+        "packageManagerVersion": "12.2.0",
+        "cleanup": {
+          "RootProcessId": 1176,
+          "Completed": true,
+          "ProcessesObserved": 14,
+          "ProcessesTerminated": 8,
+          "Failure": null
+        }
+      }
+    ]
+  }
+}
