@@ -3,6 +3,8 @@ package com.evans.task_management_api.model;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 
 
 @Entity
@@ -11,8 +13,12 @@ public class Task {
     @Id
     private Long id;
     
+    @NotBlank(message = "Title is mandatory")
     private String title;
+
+    @Size(max = 500)
     private String description;
+    
     private Boolean completed;
 
     public Task() {}
@@ -20,6 +26,7 @@ public class Task {
     public Task(Long id, String title, String description, Boolean completed) {
         this.id = id;
         this.title = title;
+
         this.description = description;
         this.completed = completed;
     }

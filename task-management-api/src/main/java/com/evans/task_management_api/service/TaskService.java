@@ -4,8 +4,8 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.evans.task_management_api.TaskRepository;
 import com.evans.task_management_api.model.Task;
+import com.evans.task_management_api.repository.TaskRepository;
 
 @Service
 public class TaskService {

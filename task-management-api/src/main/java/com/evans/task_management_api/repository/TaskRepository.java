@@ -1,4 +1,4 @@
-package com.evans.task_management_api;
+package com.evans.task_management_api.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

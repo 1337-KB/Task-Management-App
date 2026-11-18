@@ -30,7 +30,7 @@ public class AuthController {
             );
             }
             String token = JwtUtil.generateToken(loginRequest.username());
-            return new LoginResponse(token);
+            return new LoginResponse(token, "ADMIN");
         }
 }
 

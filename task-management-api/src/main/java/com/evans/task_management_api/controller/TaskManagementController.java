@@ -1,6 +1,7 @@
 package com.evans.task_management_api.controller;
 
 import java.util.List;
+import jakarta.validation.Valid;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -42,7 +43,7 @@ public class TaskManagementController {
     }
 
     @PostMapping
-    public ResponseEntity<Task> createTask(@RequestBody Task task) {
+    public ResponseEntity<Task> createTask(@Valid @RequestBody Task task) {
         Task createdTask = taskService.createTask(task);
         return ResponseEntity.status(HttpStatus.CREATED).body(createdTask);
     }
